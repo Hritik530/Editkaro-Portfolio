@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Editkaro Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Editkaro.in</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-toggle" id="nav-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1>Editkaro.in</h1>
+      <p>Your Social Media Marketing & Video Editing Agency</p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio-section">
+    <h2 class="section-title">Our Creative Work</h2>
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="short">Short-form videos</button>
+      <button class="filter-btn" data-filter="long">Long-form videos</button>
+      <button class="filter-btn" data-filter="gaming">Gaming videos</button>
+      <button class="filter-btn" data-filter="football">Football edits</button>
+      <button class="filter-btn" data-filter="ecommerce">eCommerce ads</button>
+      <button class="filter-btn" data-filter="documentary">Documentary style</button>
+      <button class="filter-btn" data-filter="colorgrading">Color grading</button>
+      <button class="filter-btn" data-filter="anime">Anime videos</button>
+      <button class="filter-btn" data-filter="adcampaigns">Ad campaigns</button>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <!-- Example video items with dummy thumbnails & sample videos -->
+      <div class="portfolio-item" data-category="short">
+        <img src="https://img.youtube.com/vi/ScMzIvxBSi4/hqdefault.jpg" alt="Short-form Video 1" />
+        <div class="video-title">Short-form Video 1</div>
+        <button class="play-btn" data-video="https://www.w3schools.com/html/mov_bbb.mp4">▶</button>
+      </div>
+      
+      <div class="portfolio-item" data-category="long">
+        <img src="https://img.youtube.com/vi/tgbNymZ7vqY/hqdefault.jpg" alt="Long-form Video 1" />
+        <div class="video-title">Long-form Video 1</div>
+        <button class="play-btn" data-video="https://www.w3schools.com/html/movie.mp4">▶</button>
+      </div>
+
+      <div class="portfolio-item" data-category="gaming">
+        <img src="https://img.youtube.com/vi/0o7HaVYwZE0/default.jpg" alt="Gaming Video 1" />
+        <div class="video-title">Gaming Video 1</div>
+        <button class="play-btn" data-video="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm">▶</button>
+      </div>
+
+      <div class="portfolio-item" data-category="football">
+        <img src="https://img.youtube.com/vi/OMwpncjgKSg/hqdefault.jpg" alt="Football Edit 1" />
+        <div class="video-title">Football Edit 1</div>
+        <button class="play-btn" data-video="https://media.w3.org/2010/05/sintel/trailer.mp4">▶</button>
+      </div>
+
+      <div class="portfolio-item" data-category="ecommerce">
+        <img src="https://img.youtube.com/vi/DLX62G4lc44/hqdefault.jpg" alt="eCommerce Ad 1" />
+        <div class="video-title">eCommerce Ad 1</div>
+        <button class="play-btn" data-video="https://media.w3.org/2010/05/bunny/trailer.mp4">▶</button>
+      </div>
+
+      <div class="portfolio-item" data-category="documentary">
+        <img src="https://img.youtube.com/vi/5qap5aO4i9A/hqdefault.jpg" alt="Documentary Style 1" />
+        <div class="video-title">Documentary Style 1</div>
+        <button class="play-btn" data-video="https://media.w3.org/2010/05/bunny/movie.mp4">▶</button>
+      </div>
+
+      <div class="portfolio-item" data-category="colorgrading">
+        <img src="https://img.youtube.com/vi/a1Y73sPHKxw/hqdefault.jpg" alt="Color Grading 1" />
+        <div class="video-title">Color Grading 1</div>
+        <button class="play-btn" data-video="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm">▶</button>
+      </div>
+
+      <div class="portfolio-item" data-category="anime">
+        <img src="https://img.youtube.com/vi/E7wJTI-1dvQ/hqdefault.jpg" alt="Anime Video 1" />
+        <div class="video-title">Anime Video 1</div>
+        <button class="play-btn" data-video="https://media.w3.org/2010/05/sintel/trailer.mp4">▶</button>
+      </div>
+
+      <div class="portfolio-item" data-category="adcampaigns">
+        <img src="https://img.youtube.com/vi/yi8ywuCc4Hw/hqdefault.jpg" alt="Ad Campaign 1" />
+        <div class="video-title">Ad Campaign 1</div>
+        <button class="play-btn" data-video="https://media.w3.org/2010/05/bunny/movie.mp4">▶</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <h2 class="section-title">About Editkaro.in</h2>
+    <p>We are a cutting-edge social media marketing and video editing agency, specializing in creative storytelling across various video genres and digital campaigns. Our passion is delivering compelling content that captivates audiences and drives results.</p>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Contact Us</h2>
+    <p>Follow us on social media or get in touch for your next project.</p>
+    <div class="social-links">
+      <a href="https://instagram.com/editkaro.in" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+        <svg class="icon" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5a3.75 3.75 0 003.75-3.75v-8.5A3.75 3.75 0 0016.25 4h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm4.5-3a1 1 0 110 2 1 1 0 010-2z"/></svg>
+      </a>
+      <a href="https://youtube.com/editkaro.in" target="_blank" aria-label="YouTube" rel="noopener noreferrer">
+        <svg class="icon" fill="currentColor" viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6zm12-3a7.5 7.5 0 01-6.75 7.48V8.52A7.5 7.5 0 0122 12zm-10 8h-4a3 3 0 01-3-3v-8a3 3 0 013-3h4v14zm-2-12H6v4h2v-4z"/></svg>
+      </a>
+      <a href="https://linkedin.com/company/editkaro" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
+        <svg class="icon" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S.02 4.88.02 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.23 8H5.2v14H.23V8zM8.98 8h4.65v2.09h.07c.65-1.22 2.23-2.5 4.6-2.5 4.92 0 5.83 3.24 5.83 7.44v8.97h-4.97v-7.96c0-1.9-.04-4.35-2.65-4.35-2.66 0-3.07 2.08-3.07 4.23v8.08H8.98V8z"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Editkaro.in | All rights reserved.</p>
+  </footer>
+
+  <div id="video-modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="close-modal" id="close-modal">&times;</button>
+      <video id="modal-video" controls></video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
