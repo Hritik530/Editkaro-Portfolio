@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "Assignment3/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "^/(.*)$", "dest": "/Assignment3/$1" }
+  ]
+}
